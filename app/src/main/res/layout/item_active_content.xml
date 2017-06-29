@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/aaabac" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="52dp"
+            android:text="1、传达上级有关会议和文件精神"
+            android:textColor="@color/xuncha_name"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/content_finish_btn"
+            android:layout_width="77dp"
+            android:layout_height="37dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/weiwancheng_1"
+            android:text="@string/un_finish"
+            android:textColor="@color/xuncha_name"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp">
+
+
+            <com.junova.huizhong.widget.PicGridView
+                android:id="@+id/photo_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="56dp"
+                android:horizontalSpacing="22dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"></com.junova.huizhong.widget.PicGridView>
+
+            <EditText
+                android:id="@+id/edt_describle"
+                android:layout_width="460dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:layout_below="@+id/photo_grid"
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/editext_rectangle"
+                android:cursorVisible="true"
+                android:hint="活动描述"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/bt_chose_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_describle"
+                android:layout_below="@+id/photo_grid"
+                android:layout_toRightOf="@+id/edt_describle"
+                android:background="@drawable/down_chose"
+                android:scaleType="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="保 存" />
+    </LinearLayout>
+</LinearLayout>

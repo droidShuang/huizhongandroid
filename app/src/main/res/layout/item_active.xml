@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/news_bg">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="10dp"
+            android:text="落实安全活动项目"
+            android:textColor="@color/xuncha_name"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_title"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="10dp"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textColor="@color/xuncha_name"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="274dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/text_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dian_1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="52dp"
+            android:text="本月活动次数："
+            android:textColor="@color/active_count"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_monthcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+
+            android:layout_toRightOf="@+id/text_count"
+            android:text="10"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_finsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/text_monthcount"
+            android:text="已完成次数："
+            android:textColor="@color/active_count"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_finshcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/text_finsh"
+            android:text="10"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="36dp"
+            android:text="tessssssssssst"
+            android:textColor="@color/active_date"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yue_1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

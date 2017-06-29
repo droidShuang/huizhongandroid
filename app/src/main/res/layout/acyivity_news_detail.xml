@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/biaotibeijing">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/button_back"
+            android:text="@string/back"
+            android:textColor="@color/color_back"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/news_detail"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/news_title"
+            android:textColor="@color/xuncha_name"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_title"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="5dp"
+            android:text="2015-08-19"
+            android:textColor="@color/xuncha_name"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/downLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/xiazai_1"
+            android:text="@string/download"
+
+            android:textColor="@color/xuncha_name"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/change_psd_line" />
+
+    <WebView
+        android:id="@+id/news_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp" />
+
+</LinearLayout>

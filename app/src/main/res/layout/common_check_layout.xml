@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="压装"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/statusCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14sp"
+            android:background="@drawable/ck_status"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yichangLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+		<TextView
+		    android:id="@+id/position"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone"
+		    />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/yc_summary"
+            android:textColor="@color/daijian"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/yichangSummaryEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="start"
+            android:hint="@string/please_input_yichang_summary"
+            android:minLines="5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/yichang_camera"
+            android:textColor="@color/daijian"
+            android:textSize="14sp" />
+
+        <com.junova.huizhong.widget.PicGridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:horizontalSpacing="15dp"
+            android:verticalSpacing="14dp"
+            android:background="@android:color/transparent" >
+        </com.junova.huizhong.widget.PicGridView>
+    </LinearLayout>
+
+</LinearLayout>

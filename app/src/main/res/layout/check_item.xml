@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"
+            android:layout_toLeftOf="@+id/radioGroup"
+            android:text="@string/check_name"
+            android:textColor="@color/xuncha_name"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rg_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_green_radio"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/normal"
+                android:textColor="@color/black_white_radio"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rg_abnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/white_red_radio"
+                android:button="@null"
+
+                android:gravity="center"
+                android:text="@string/abnormal"
+                android:textColor="@color/black_white_radio"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/xian_1" />
+
+    <LinearLayout
+        android:id="@+id/layout_expand"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:text="@string/yc_type"
+                android:textColor="@color/xuncha_name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/yc_choose"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@color/yc_choose"
+                android:drawablePadding="28dp"
+                android:drawableRight="@drawable/xuanze_white_1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="20dp"
+                android:text="异常类型"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="@string/yichang_camera"
+                android:textColor="@color/xuncha_name"
+                android:textSize="24sp" />
+
+            <com.junova.huizhong.widget.PicGridView
+                android:id="@+id/photo_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="56dp"
+                android:horizontalSpacing="22dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"></com.junova.huizhong.widget.PicGridView>
+
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/et_erro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/denglukang_11" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="120dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="保 存" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/xian_1" />
+    </LinearLayout>
+
+</LinearLayout>

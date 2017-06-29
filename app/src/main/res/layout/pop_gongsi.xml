@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/gongsi_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </ListView>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_line" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_line" />
+
+        <RelativeLayout
+            android:id="@+id/chejian_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/chejian_text"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="52dp"
+                android:gravity="center_vertical"
+                android:text="@string/chejian"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/chejian_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="52dp"
+                android:background="@drawable/xiangshang_1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_line" />
+
+        <ListView
+            android:id="@+id/chejian_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_line"
+            android:dividerHeight="0.5dp"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/gongduan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/gongduan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="52dp"
+                android:gravity="center_vertical"
+                android:text="@string/gongduan"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/gongduan_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="52dp"
+                android:background="@drawable/xiangshang_1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_line" />
+
+        <ListView
+            android:id="@+id/gongduan_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_line"
+            android:dividerHeight="0.5dp"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/banzu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/banzu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_marginLeft="52dp"
+                android:gravity="center_vertical"
+                android:text="@string/banzu"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/banzu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="52dp"
+                android:background="@drawable/xiangshang_1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_line" />
+
+        <ListView
+            android:id="@+id/banzu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_line"
+            android:dividerHeight="0.5dp"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

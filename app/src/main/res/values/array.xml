@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="errorkind">
+        <item>未处理</item>
+        <item>已上报</item>
+        <item>已处理</item>
+        <item>已关闭</item>
+    </string-array>
+    <string-array name="factorys">
+        <item>安亭轿车底盘厂 </item>
+        <item>轿车车桥厂</item>
+        <item>烟台子公司</item>
+        <item>安亭子公司</item>
+        <item>安保部</item>
+    </string-array>
+</resources>

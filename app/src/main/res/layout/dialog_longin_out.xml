@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/hint"
+        android:textColor="@color/xuncha_name"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/xian_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/sure_login_out"
+        android:textColor="@color/xuncha_name"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/cancell"
+            android:layout_width="84dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/btn_login_out"
+            android:text="@string/cancell"
+            android:textColor="@color/light_blue"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="84dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_login_out"
+            android:text="@string/sure"
+            android:textColor="@color/light_blue"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</LinearLayout>

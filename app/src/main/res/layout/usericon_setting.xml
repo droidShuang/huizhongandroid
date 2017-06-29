@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pop_menu_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="拍照"
+        android:textColor="@color/white"
+         android:background="@anim/pud_btn"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pop_menu_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="相册"
+        android:textColor="@color/white"
+        android:background="@anim/pud_btn"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pop_menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消"
+          android:background="@anim/pud_btn"
+       android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

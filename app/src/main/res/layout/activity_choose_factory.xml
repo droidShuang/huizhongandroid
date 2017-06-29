@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_factory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.junova.huizhong.activity.ChooseFactoryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dingbubeijing_1" >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/logo_1" />
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="上海汇众"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/choose_bt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_below="@+id/choose_rg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:text="取消"
+        android:id="@+id/choose_bt_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <RadioGroup
+        android:id="@+id/choose_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/choose_bt"
+        android:layout_alignStart="@+id/choose_bt"
+        android:layout_marginTop="339dp">
+
+        <RadioButton
+            android:id="@+id/choose_anting"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="安亭轿车底盘厂 " />
+
+        <RadioButton
+            android:id="@+id/choose_jinqiao"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="轿车车桥厂 " />
+        <RadioButton
+            android:id="@+id/choose_yantai"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="烟台子公司 " />
+        <RadioButton
+            android:id="@+id/choose_antingbei"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="安亭子公司 " />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

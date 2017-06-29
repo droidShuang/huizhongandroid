@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_banzu">
+        <item>全部</item>
+        <item>待巡查 </item>
+        <item>巡查正常</item>
+        <item>巡查异常</item>
+        <item>已整改</item>
+        <item>整改审核</item>
+    </string-array>
+    <string-array name="spinner_other">
+        <item>全部</item>
+        <item>待抽查 </item>
+        <item>抽查正常</item>
+        <item>抽查异常</item>
+        <item>已整改</item>
+    </string-array>
+    
+    <string-array name="spinner_choucha">
+        <item>全部</item>
+        <item>正常</item>
+        <item>异常</item>
+    </string-array>
+</resources>

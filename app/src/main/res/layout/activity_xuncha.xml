@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biaotibeijing"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp" >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/button_back"
+                android:text="@string/back"
+                android:textColor="@color/color_back"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/xuncha"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/xuncha_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="138dp"
+                android:layout_marginTop="35dp"
+                android:text="（第一次）"
+                android:textColor="@color/green_times"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sousuokuang"
+                android:hint="@string/input_key_hint"
+                android:paddingLeft="5dp"
+                android:lines="1"
+                android:inputType="text"
+                android:textColor="@color/summary"
+               android:imeOptions="actionSearch"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/biaotilan" >
+
+        <RadioGroup
+            android:id="@+id/rg_xuncha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/kuang"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rg_paicha"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rg_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="仪器检测"
+                android:textColor="@color/rg_text"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rg_jiance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rg_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="隐患排查"
+                android:textColor="@color/rg_text"
+                android:textSize="24sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_xuncha"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

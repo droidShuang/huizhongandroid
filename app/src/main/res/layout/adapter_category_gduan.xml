@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/categoryGduanText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/hz_pud_xl_rz_ic_x"
+        android:padding="15dp"
+        android:button="@null"
+        android:textColor="@color/bottom_nor" />
+
+    <com.junova.huizhong.widget.PicGridView
+        android:id="@+id/banzuListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:numColumns="auto_fit"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/biaotibeijing" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/button_back"
+            android:text="@string/back"
+            android:textColor="@color/color_back"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/otherunusual"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_commit"
+            android:text="@string/commit"
+            android:textColor="@color/color_back"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="34dp"
+        android:text="选择工厂"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/yc_choose"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/yc_choose"
+        android:drawablePadding="28dp"
+        android:drawableRight="@drawable/xuanze_white_1"
+        android:gravity="center_vertical"
+        android:paddingBottom="9dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:text="异常类型"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:background="#8d8e8f" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        
+        <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="异常拍照"
+        android:textSize="24px" />
+
+    <com.junova.huizhong.widget.PicGridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/text"
+        android:horizontalSpacing="22dp"
+        android:numColumns="4"
+        android:verticalSpacing="22dp" />
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

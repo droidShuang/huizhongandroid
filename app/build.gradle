@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.junova.huizhong"
+        minSdkVersion 11
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+}
+dependencies {
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.zhy:okhttputils:2.3.8'
+}

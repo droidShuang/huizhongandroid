@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/biaotibeijing">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/button_back"
+            android:text="@string/back"
+            android:textColor="@color/color_back"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/accident"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="92dp">
+
+        <TextView
+            android:id="@+id/cur_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="2015年08月10日"
+            android:textColor="@color/xuncha_name"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cur_date"
+            android:layout_marginLeft="20dp"
+            android:text="@string/currentDate"
+            android:textColor="@color/bottom_nor"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/cur_date">
+
+            <TextView
+                android:id="@+id/choose_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="@string/chooseTime"
+                android:textColor="@color/xuncha_name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/choose_text"
+                android:text="1900-01-01"
+                android:textColor="@color/xuncha_name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_date"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/choose_text"
+                android:text="1900-01-01"
+                android:textColor="@color/xuncha_name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/start_date"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/start_date"
+                android:text="@string/start"
+                android:textColor="@color/bottom_nor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/end_date"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/end_date"
+                android:text="@string/end"
+                android:textColor="@color/bottom_nor"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/shang_1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/xian_1" />
+
+    <ListView
+        android:id="@+id/list_accident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"></ListView>
+
+</LinearLayout>

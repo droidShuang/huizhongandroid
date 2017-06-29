@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/item_tx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.标题" />
+
+    <com.junova.huizhong.widget.PicGridView
+        android:id="@+id/item_photo_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="56dp"
+        android:horizontalSpacing="22dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"></com.junova.huizhong.widget.PicGridView>
+
+    <TextView
+        android:id="@+id/item_tx_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="描述：" />
+
+    <TextView
+        android:id="@+id/item_tx_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="日期" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/biaotibeijing" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/button_back"
+            android:text="@string/back"
+            android:textColor="@color/color_back"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/changethepassword"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/old_psd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:hint="@string/please_input_old_password"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:background="@color/change_psd_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp" >
+
+        <EditText
+            android:id="@+id/new_psd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="68dp"
+            android:background="@null"
+            android:hint="@string/please_input_new_password"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:background="@color/change_psd_line" />
+
+    <EditText
+        android:id="@+id/new_psd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:hint="@string/please_input_renew_password"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:background="@color/change_psd_line" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/btn_refresh_psd_sure"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</LinearLayout>

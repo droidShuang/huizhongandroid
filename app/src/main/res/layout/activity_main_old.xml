@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hz_pud_topbar_bg"
+    tools:context=".MainActivityFragment" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hz_pud_topbar_bg" >
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5.5dp"
+            android:layout_marginRight="5.5dp"
+            android:layout_marginTop="5.5dp"
+            android:background="@drawable/search_btn"
+            android:src="@drawable/hz_pud_topbar_ic_fdj" />
+
+        <EditText
+            android:id="@+id/searchEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.5dp"
+            android:layout_toLeftOf="@id/searchBtn"
+            android:background="@drawable/hz_pud_topbar_szbar"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/input_key_hint"
+            android:padding="8dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:background="@drawable/hz_pud_ebar_bg"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/pullBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pull_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="班组"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/equipmentTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/equipment_btn"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/equipment"
+            android:textColor="@color/eq_color" />
+
+        <RadioButton
+            android:id="@+id/meterTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/meter_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/meter"
+            android:textColor="@color/eq_color" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/tabLayout"
+        android:background="@color/line" />
+
+    <com.junova.huizhong.widget.SlideHolder
+        android:id="@+id/centerTabHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line" >
+
+        <com.junova.huizhong.widget.PullRefreshListView
+            android:id="@+id/categoryListView"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@color/category_bg"
+            android:divider="@android:color/transparent"
+            android:listSelector="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hz_pud_3bar_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/searchTabTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/hz_pud_3bar_ic_l"
+                    android:drawablePadding="18.5dp"
+                    android:gravity="center"
+                    android:padding="15.5dp"
+                    android:text="@string/meter_category"
+                    android:textColor="@color/title"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/statusSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spinner_btn"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical" >
+
+                        <com.junova.huizhong.widget.PullRefreshListView
+                            android:id="@+id/InfoListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="8dp"
+                            android:listSelector="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/categoryTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/chejian"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <com.junova.huizhong.widget.PullRefreshListView
+                        android:id="@+id/chejianListView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/chejian"
+                        android:divider="@null" />
+
+                    <com.junova.huizhong.widget.PullRefreshListView
+                        android:id="@+id/gongduanListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/chejianListView"
+                        android:background="@drawable/hz_img_xq_bg"
+                        android:divider="@color/detail_bg"
+                        android:dividerHeight="0.5dp" />
+
+                    <GridView
+                        android:id="@+id/banzuListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/chejianListView"
+                        android:background="@drawable/hz_img_xq_bg"
+                        android:divider="@null"
+                        android:numColumns="auto_fit"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.junova.huizhong.widget.SlideHolder>
+
+</RelativeLayout>

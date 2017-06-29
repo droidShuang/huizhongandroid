@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/count_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/hz_pud_topbar_bg"
+        android:gravity="center"
+        android:text="统计中心"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/count_rg"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@drawable/hz_pud_ebar_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/safeCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="安全绿十字"
+            android:textColor="@color/left_color" />
+
+        <RadioButton
+            android:id="@+id/reviseCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_eq"
+            android:button="@null"
+            android:gravity="center"
+            android:text="整改统计"
+            android:textColor="@color/left_color" />
+
+        <RadioButton
+            android:id="@+id/checkCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/meter_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="巡查统计"
+            android:textColor="@color/left_color" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="80dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/sp_year"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/sp_month"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/count"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/hz_pud_ebar_bg"
+            android:text="统计" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="@color/daijian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="@color/daijian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="@color/daijian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三"
+            android:textColor="@color/daijian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="@color/daijian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="@color/daijian" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="@color/daijian" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/calendar_bg"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:verticalSpacing="1dp" >
+    </GridView>
+
+</LinearLayout>

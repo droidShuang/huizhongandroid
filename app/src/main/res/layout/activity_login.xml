@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing01_01"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/huizonglogo_03" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/huizonglogo_06" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/denglukang_11"
+        android:drawableLeft="@drawable/yonghutouxiang_03"
+        android:hint="@string/please_input_username"
+        android:inputType="text"
+        android:padding="8dp"></EditText>
+
+    <EditText
+        android:id="@+id/psdEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/denglukang_11"
+        android:drawableLeft="@drawable/mimasuo_06"
+        android:hint="@string/please_input_password"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:text="选择工厂"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <Spinner
+            android:id="@+id/login_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="118dp"
+            android:layout_marginRight="118dp"
+            android:entries="@array/factorys"></Spinner>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/login_seletor"
+        android:text="@string/login"
+        android:textColor="@color/login_text"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/forgetPWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/forget"
+        android:textColor="@color/summary"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/login_bt_choseip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="onClick"
+        android:text="选择IP"
+        android:visibility="invisible" />
+
+</LinearLayout>

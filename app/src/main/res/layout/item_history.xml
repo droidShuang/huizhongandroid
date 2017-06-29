@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_tx_batchnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="批次码:"
+        android:textSize="35px" />
+
+    <TextView
+        android:id="@+id/item_tx_describle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tx_batchnumber"
+        android:text="任务描述"
+        android:visibility="gone"
+        android:textSize="35px" />
+
+    <TextView
+        android:id="@+id/item_tx_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tx_describle"
+        android:text="错误描述"
+        android:visibility="gone"
+        android:textSize="35px" />
+
+    <TextView
+        android:id="@+id/item_tx_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tx_error"
+        android:text="@string/currentDate" />
+
+    <TextView
+        android:id="@+id/item_tx_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_tx_date"
+        android:layout_alignParentRight="true"
+        android:text="状态"
+        android:textSize="35px" />
+</RelativeLayout>

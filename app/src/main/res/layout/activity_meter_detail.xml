@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_bg"
+    android:orientation="vertical"
+    tools:context=".activity.MeterDetailActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/meterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="设备名称"
+                android:textColor="@color/title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/meterNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meterTitle"
+                android:padding="5dp"
+                android:text="设备编号"
+                android:textColor="@color/summary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meterSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meterNo"
+                android:padding="5dp"
+                android:text="设备描述"
+                android:textColor="@color/detail"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meterStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="待巡查"
+                android:textColor="@color/daijian"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:background="@drawable/hz_img_xq_bg" >
+
+        <LinearLayout
+            android:id="@+id/checkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
